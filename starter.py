@@ -1,15 +1,12 @@
-import speech_recognition as sr
+import random
+import string
 
-# create a recognizer object
-r = sr.Recognizer()
+def generate_password(length):
+    """Generate a random password of the specified length"""
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(characters) for i in range(length))
+    return password
 
-# use the default microphone as the audio source
-with sr.Microphone() as source:
-    print("Speak something...")
-    # listen for audio and store it in audio_data variable
-    audio_data = r.record(source, duration=5)
-    print("Recognizing...")
-
-    # recognize speech using Google Speech Recognition
-    text = r.recognize_google(audio_data)
-    print(f"You said: {text}")
+# Generate a password of length 12
+password = generate_password(12)
+print(password)
