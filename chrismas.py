@@ -1,4 +1,5 @@
 #1) Exercise Build christmass tree
+
 # for i in range(10):
 #     spaces = " "*(10-i)
 #     hashes = "*"*(2*i-1)
@@ -21,11 +22,11 @@
 
 #3) Exercise: Make a funstion that prints the highest even
 
-def highest_even(li):
-    highest = 0
-    for i in li:
-        if i>highest and i%2==0:
-            highest = i
-    return highest
+# def highest_even(li):
+#     highest = 0
+#     for i in li:
+#         if i>highest and i%2==0:
+#             highest = i
+#     return highest
 
-print(highest_even([10,2,3,4,8,11]))
+# print(highest_even([10,2,3,4,8,11])) 
