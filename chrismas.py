@@ -1,3 +1,3 @@
-for i in range(5,1,-1):
-    for j in range (5):
-        print(f'{(i-j)*" "}{"*"*j}')
+for i in range(1, 10):
+    print(f'{" "*(10-i)}{"*"*i}')
+        
