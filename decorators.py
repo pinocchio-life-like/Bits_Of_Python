@@ -10,5 +10,4 @@ def hello_func():
     print("Helllooooo")
     
 
-hello = decorator(hello_func)
-hello()
+hello_func()
