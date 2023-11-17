@@ -9,4 +9,4 @@ def decorator(func):
 def hello_func(*args, **kwargs):
     print(*args)
     
-hello_func("Helloooo")
+hello_func("Helloooo") 
