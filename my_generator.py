@@ -18,4 +18,3 @@ gen = MyGenerator(2,5)
 
 for i in gen:
     print(i)
-         
