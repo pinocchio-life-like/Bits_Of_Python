@@ -9,14 +9,14 @@ class FibGenerator:
         return self
     
     def __next__(self):
-        if self.index == FibGenerator.curr:
+        if self.index < FibGenerator.curr:
             raise StopIteration
         else:
             FibGenerator.curr +=1
             temp = FibGenerator.first
             FibGenerator.first = FibGenerator.second
             FibGenerator.second = temp + FibGenerator.second
-        return FibGenerator.first 
+            return temp
      
 fib = FibGenerator(20)
 
