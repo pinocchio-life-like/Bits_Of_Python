@@ -1,6 +1,5 @@
 class MyGenerator:
     def __init__(self, init, last):
-        self.init = init
         self.curr = init
         self.last = last
         
