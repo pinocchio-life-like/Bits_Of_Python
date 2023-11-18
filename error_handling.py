@@ -5,6 +5,10 @@ def sum(num1, num2):
         except  TypeError as err:
             print("You have made a mistake!", err)
         else:
+        #or we can do it as below
+        #except (Type error, division error or so...) as err:
+        #    print(err)
+        #It will get the error raised and then print it
             print("I run if no error or no break")
             print("I also can not come right after try")
         finally:
