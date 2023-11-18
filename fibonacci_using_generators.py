@@ -22,6 +22,3 @@ fib = FibGenerator(20)
 
 for i in fib:
     print(i)
-
-
-    
