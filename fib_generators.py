@@ -8,5 +8,5 @@ def fib(index):
         last = temp + last
 
 
-for i in fib(20):
+for i in fib(10):
     print(i)
