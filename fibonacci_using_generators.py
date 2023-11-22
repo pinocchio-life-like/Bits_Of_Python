@@ -18,7 +18,7 @@ class FibGenerator:
             FibGenerator.second = temp + FibGenerator.second
             return temp
      
-fib = FibGenerator(20)
+fib = FibGenerator(10)
 
 for i in fib:
     print(i)
