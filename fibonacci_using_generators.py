@@ -21,4 +21,4 @@ class FibGenerator:
 fib = FibGenerator(10)
 
 for i in fib:
-    print(i)
+    print(i)  
