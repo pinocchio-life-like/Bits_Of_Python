@@ -18,3 +18,6 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
+numbers = set(texts[:][0]).union(set(calls[:][0]))
+
+print(f"There are {len(numbers)} different telephone numbers in the records.")
