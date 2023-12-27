@@ -18,6 +18,5 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
-numbers = set(texts[0:-1])
+numbers = set([i[0] for i in texts]).union([i[0] for i in calls])
 print(f"There are {len(numbers)} different telephone numbers in the records.")
-print(numbers)
