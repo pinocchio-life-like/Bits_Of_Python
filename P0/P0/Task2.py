@@ -21,4 +21,3 @@ September 2016.".
 """
 longer_call = max(calls, key=lambda x: int(x[3]))
 print(f"{longer_call[0]} spent the longest time, {longer_call[3]} seconds, on the phone during September 2016.")
-# print(f"{calls[0][0]} spent the longest time, {calls[0][3]} seconds, on the phone during September 2016.")
