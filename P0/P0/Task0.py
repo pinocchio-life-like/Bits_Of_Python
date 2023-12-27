@@ -19,8 +19,6 @@ Print messages:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
-incoming_number = texts[0][0]
-answering_number = texts[0][1]
-at_time = texts[0][2]
 
-print(f"First record of texts, {incoming_number} texts {answering_number} at time {at_time}")
+print(f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time {texts[0][2]}")
+print(f"Last record of calls, {calls[-1][0]} calls {calls[-1][1]} at time {calls[-1][2]}, lasting {calls[-1][3]} seconds")
