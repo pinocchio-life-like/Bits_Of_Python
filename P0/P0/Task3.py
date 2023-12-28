@@ -47,3 +47,8 @@ to other fixed lines in Bangalore."
 The percentage should have 2 decimal digits
 """
 
+bangalore_callers = [i for i in calls if i[0][:6] == '(080)']
+fixed_lines = [i for i in bangalore_callers if i[:2] == '(0']
+mobile_lines = [i for i in bangalore_callers if i[1].split(' ')[0][0] in ['7', '8', '9']]
+telemarketers = [i for i in bangalore_callers if i[:3] == '140']
+
